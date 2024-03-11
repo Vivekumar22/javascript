@@ -32,17 +32,17 @@ kaise hum data ko memory mein rakhte aur access krte hai based on that 2 types :
 
     // 2  Non-Primitive (Reference)
 
-    const heros = ["shaktiman" , "iron man" , "doga"]
-    let myObj = {
-        name : "vivek",
-        age : 22,
-    }
+    // const heros = ["shaktiman" , "iron man" , "doga"]
+    // let myObj = {
+    //     name : "vivek",
+    //     age : 22,
+    // }
 
-    const myFunction = function(){
-        console.log("Hello World");
-    }
-    console.log(typeof myFunction);
-    console.log(myFunction());
+    // const myFunction = function(){
+    //     console.log("Hello World");
+    // }
+    // console.log(typeof myFunction);
+    // console.log(myFunction());
 
     /*typeof
 
@@ -51,4 +51,32 @@ kaise hum data ko memory mein rakhte aur access krte hai based on that 2 types :
     NUmber , boolean , strig , function  => giving same
 
     */
+
+
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    // stack ( Primitive ) : change in copy of that var
+    // Heap ( Non - Primitive ) : change in original value (reference)
+
+    let myYoutubeName = "codewithvivek"
+
+    let anothername = myYoutubeName
+    anothername = "chaiwithvivek"
+
+    console.log(myYoutubeName)
+    console.log(anothername)
+
+    //heap 
+     let userOne = {
+        email : "user1@gmail.com" ,
+        upi : "user@ybl"
+     }
+      
+     let userTwo = userOne
+
+     userTwo.email = "user@google.com"
+
+    console.log(userOne.email);
+    console.log(userTwo.email);
+
 
