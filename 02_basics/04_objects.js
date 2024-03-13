@@ -6,7 +6,7 @@ tinderUser.id = "123abc"
 tinderUser.name = "vivek"
 tinderUser.isLoggedIn = false
 
-//console.log(tinderUser);
+console.log(tinderUser);
 
 const regularUser = {
     email: "random@gmail.com",
@@ -18,7 +18,7 @@ const regularUser = {
     }
 }
 
-//console.log(regularUser.fullname.userFullName.firstname);
+console.log(regularUser.fullname.userFullName.firstname);
 
  
 const obj1 = {1: "a", 2: "b"}
@@ -27,12 +27,12 @@ const obj3 = {5: "a", 6: "b"}
 
 
 // merging object
-// const obj4 = {obj1 , obj2}
-// const obj5 = Object.assign(  {} , obj1 , obj2  ,obj4)  //it merge all object : whatever written at first is considered as target means all value going into that variable from all 
-// Object.assign(target , source ,source ......)
+const obj4 = {obj1 , obj2}
+const obj5 = Object.assign(  {} , obj1 , obj2  ,obj4)  //it merge all object : whatever written at first is considered as target means all value going into that variable from all 
+Object.assign(target , source ,source ......)
 // spreading take glass and leave to ground 
-// const obj6 = {...obj1, ...obj2, ...obj3}
-// console.log(obj6);
+const obj6 = {...obj1, ...obj2, ...obj3}
+console.log(obj6);
 
 
 // when values comes from database like array of object
