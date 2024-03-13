@@ -1,4 +1,5 @@
-//singleton
+//singleton object
+const user = new Object();
 Object.create
 
 
