@@ -4,6 +4,7 @@
 // [{}, {}, {}]
 
 const arr = [1, 2, 3, 4, 5]
+console.log(typeof arr);
 
 for (const num of arr) {
     //console.log(num);
@@ -16,7 +17,8 @@ for (const greet of greetings) {
 
 // Maps
 
-const map = new Map()
+const map = new Map()  // it keep unique key
+
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "France")

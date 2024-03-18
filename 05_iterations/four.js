@@ -1,4 +1,4 @@
-const myObject = {
+ const myObject = {
     js: 'javascript',
     cpp: 'C++',
     rb: "ruby",
@@ -24,3 +24,8 @@ for (const key in programming) {
 // for (const key in map) {
 //     console.log(key);
 // }
+
+
+//map is not iterable so can't run forin loop
+// object :forin
+//arrays: forof
