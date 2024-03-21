@@ -1,12 +1,12 @@
 // 
 
-// const userEmail = "V@vivek.ai"
+const userEmail = "V@vivek.ai"
 
-// if(userEmail){
-//     console.log("Got the user email");
-// }else{
-//     console.log("don't have user email");
-// }
+if(userEmail){
+    console.log("Got the user email");
+}else{
+    console.log("don't have user email");
+}
 
 /* 
 
