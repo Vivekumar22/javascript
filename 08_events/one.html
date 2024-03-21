@@ -24,23 +24,23 @@
     //clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+    document.getElementById('owl').onclick = function(){
+        alert("owl clicked")
+    }
 
-    // document.getElementById('images').addEventListener('click',function(e){
-    //     console.log("clicked inside the ul");
-    // },true) // here capturing event is happing
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("clicked inside the ul");
+    },true) // here capturing event is happing
 
-    // document.getElementById('owl').addEventListener('click',function(e){
-    //     console.log("owl clicked");
-    //     e.stpoPropagation()
-    // },false) // bubbling concept default value is false
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("owl clicked");
+        e.stpoPropagation()
+    },false) // bubbling concept default value is false
     
-    // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault()
-    //     console.log("google clicked");  
-    // },false)
+    document.getElementById('google').addEventListener('click',function(e){
+        e.preventDefault()
+        console.log("google clicked");  
+    },false)
 
 
     document.querySelector('#images').addEventListener('click', function(e){
