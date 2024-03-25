@@ -75,6 +75,8 @@ const promiseFive = new Promise((resolve,reject) => {
     },1000)
 })
 
+
+//If you forget to wrap your await calls in try/catch blocks, any rejected promise will result in an unhandled promise rejection, potentially crashing your application or leading to unexpected behavior.
 async function promiseFiveConsume(){
     try {
         const response = await promiseFive
