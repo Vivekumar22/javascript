@@ -76,7 +76,7 @@ const promiseFive = new Promise((resolve,reject) => {
 })
 
 
-//If you forget to wrap your await calls in try/catch blocks, any rejected promise will result in an unhandled promise rejection, potentially crashing your application or leading to unexpected behavior.
+//If you forget to wrap your await calls in try/catch blocks, any rejected promise will result in an unhandled promise rejection, potentially crashing your application or leading to unexpected behavior. 
 async function promiseFiveConsume(){
     try {
         const response = await promiseFive
@@ -119,3 +119,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log(error);
 })
 
+
+// A fetch() promise only rejects when a network error is encountered
+// (which is usually when there's a permission issue or similar)
+// a fetch promise doesn't reject a HTTP errors (404 etc)
