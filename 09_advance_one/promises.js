@@ -110,7 +110,7 @@ promiseFiveConsume()
 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then((response) => {
-    return response.json()
+    return response.json() // it convert the string into object
 })
 .then((data) => {
     console.log(data);
